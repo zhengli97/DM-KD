@@ -55,30 +55,22 @@ After the sythesis is complete, put the synthesized data into the `syn_dataset` 
 
 | Synthetic Dataset | Data Amount | Size | Download |
 |:---------------:|:-----------------:|:-----------------:|:-----------------:|
-| Low Fidelity (s=2, T=100)  | 200K | ~20GB | [[Baidu Yun]](https://pan.baidu.com/s/1QFcxdCIT2d-UgQMBCtpvuA?pwd=kvdj) |
-| High Fidelity (s=4, T=250) | 200K | ~20GB | [[Baidu Yun]](https://pan.baidu.com/s/1W9Tq1lY2ZClvmSBLUJBb9A?pwd=ir0k) |
+| Low Fidelity (s=2, T=100)  | 200K | ~20GB | [[Baidu Yun]](https://pan.baidu.com/s/1nsVLzAqZ13NIvnT1vAIm0A?pwd=h5mc) |
+| High Fidelity (s=4, T=250) | 200K | ~20GB | [[Baidu Yun]](https://pan.baidu.com/s/1yFxtqFqJITfTlLVsGNkIAQ?pwd=7449) |
 
-Download the synthesized dataset and put the dataset into the `syn_dataset` folder. 
+Download the synthesized dataset and put the dataset into the `syn_dataset` folder. Then unzip the dataset in the current folder.
 
-2. Download the pretrained teacher models and put them to 
+2. Download the true ImageNet validation dataset and put them into the `true_dataset` folder. Then unzip the dataset in the current folder. You can download the true ImageNet-1K dataset using our links: [[Baidu Yun]](https://pan.baidu.com/s/1iKkeyio7YFQUElA3KSE3YA?pwd=aflb)
+
+3. Download the pretrained teacher models and put them into the  
 
 | Teacher models | Download |
 |:---------------:|:-----------------:|
-| CIFAR-100 | [[Baidu Yun]](https://pan.baidu.com/s/1baecoigja0jBH5-l92k37w?pwd=14dp) |
 | ImageNet | [[Baidu Yun]](https://pan.baidu.com/s/1HjGlK2lqO2gPG61tz5N20w?pwd=vfpv) |
 
 
-3. Training on CIFAR-100:
-
-- Download the CIFAR-100 dataset and change the path in `./dataset/cifar100/py line 27` to your current dataset path.
-- 
-
-
-
 4. Training on ImageNet-1K:
-
-
-
+Run the script: ``` sh scripts/imagenet_distill.sh```
 
 
 ## Citation
