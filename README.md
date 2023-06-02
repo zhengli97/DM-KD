@@ -47,28 +47,31 @@ On other datasets:
 
 In this paper, we use DiT as our default image generator. There are two ways to create synthetic data for distillation.
 
-- You can synthesize your own data according to the [official implementation](https://github.com/facebookresearch/DiT). The DiT model is XL/2. The Image Resolution is 256x256.
+- You can synthesize your own data according to the [official implementation](https://github.com/facebookresearch/DiT). The DiT model is XL/2. The Image Resolution is 256X256.
 
-After the sythesis is complete, put the synthesized data into the `xxx` folder.
+After the sythesis is complete, put the synthesized data into the `syn_dataset` folder.
 
 - We provide offline synthesized datasets for experiments.
 
 | Synthetic Dataset | Data Amount | Size | Download |
 |:---------------:|:-----------------:|:-----------------:|:-----------------:|
-| Low Fidelity (s=2, T=100)  | 200K | ~20GB | [[Baidu Yun]]() |
-| High Fidelity (s=4, T=250) | 200K | ~20GB | [[Baidu Yun]]() |
+| Low Fidelity (s=2, T=100)  | 200K | ~20GB | [[Baidu Yun]](https://pan.baidu.com/s/1QFcxdCIT2d-UgQMBCtpvuA?pwd=kvdj) |
+| High Fidelity (s=4, T=250) | 200K | ~20GB | [[Baidu Yun]](https://pan.baidu.com/s/1W9Tq1lY2ZClvmSBLUJBb9A?pwd=ir0k) |
+
+Download the synthesized dataset and put the dataset into the `syn_dataset` folder. 
 
 2. Download the pretrained teacher models and put them to 
 
 | Teacher models | Download |
 |:---------------:|:-----------------:|
-| CIFAR-100 | [[Baidu Yun]]() |
-| ImageNet  | [[Baidu Yun]]() |
+| CIFAR-100 | [[Baidu Yun]](https://pan.baidu.com/s/1baecoigja0jBH5-l92k37w?pwd=14dp) |
+| ImageNet | [[Baidu Yun]](https://pan.baidu.com/s/1HjGlK2lqO2gPG61tz5N20w?pwd=vfpv) |
 
 
 3. Training on CIFAR-100:
 
-
+- Download the CIFAR-100 dataset and change the path in `./dataset/cifar100/py line 27` to your current dataset path.
+- 
 
 
 
