@@ -62,7 +62,7 @@ Download the synthesized dataset and put the dataset into the `syn_dataset` fold
 
 2. Download the true ImageNet validation dataset and put them into the `true_dataset` folder. Then unzip the dataset in the current folder. You can download the true ImageNet-1K dataset using our links: [[Baidu Yun]](https://pan.baidu.com/s/1iKkeyio7YFQUElA3KSE3YA?pwd=aflb)
 
-3. Download the pretrained teacher models and put them into the  
+3. Download the pretrained teacher models and put them into the `save/models`` folder.
 
 | Teacher models | Download |
 |:---------------:|:-----------------:|
@@ -70,7 +70,8 @@ Download the synthesized dataset and put the dataset into the `syn_dataset` fold
 
 
 4. Training on ImageNet-1K:
-Run the script: ``` sh scripts/imagenet_distill.sh```
+Run the script: ```sh scripts/imagenet_distill.sh```. The running file will be saved in the `save/student_model` folder.
+
 
 
 ## Citation
