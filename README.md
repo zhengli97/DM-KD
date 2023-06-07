@@ -68,8 +68,9 @@ Download the synthesized dataset and put the dataset into the `syn_dataset` fold
 |:---------------:|:-----------------:|
 | ImageNet | [[Baidu Yun]](https://pan.baidu.com/s/1HjGlK2lqO2gPG61tz5N20w?pwd=vfpv) |
 
+Note that the pretrained teacher models are also available at torchvision. You can also download the pretrained models from the [official website](https://pytorch.org/vision/main/models.html).
 
-4. Training on ImageNet-1K:Run the script: 
+4. Training on ImageNet-1K: Run the script: 
 ```
 sh scripts/imagenet_distill.sh
 ```
