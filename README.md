@@ -70,7 +70,7 @@ Download the synthesized dataset and put the dataset into the `syn_dataset` fold
 
 Note that the pretrained teacher models are also available at torchvision. You can also download the pretrained models from the [official website](https://pytorch.org/vision/main/models.html).
 
-4. Training on ImageNet-1K: Run the script: 
+4. Training on 200K synthesized ImageNet-1K dataset: Run the script: 
 ```
 sh scripts/imagenet_distill.sh
 ```
