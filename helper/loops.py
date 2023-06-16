@@ -191,9 +191,6 @@ def validate(val_loader, model, criterion, opt):
     top1 = AverageMeter()
     top5 = AverageMeter()
 
-    top1_2 = AverageMeter()
-    top5_2 = AverageMeter()
-
     # switch to evaluate mode
     model.eval()
 
@@ -209,7 +206,7 @@ def validate(val_loader, model, criterion, opt):
             if torch.cuda.is_available():
                 target = target.cuda(opt.gpu if opt.multiprocessing_distributed else 0, non_blocking=True)
 
-            feat, output = model(input, is_feat=True)
+            _, output = model(input, is_feat=True)
 
             loss = criterion(output, target)
             losses.update(loss.item(), input.size(0))
