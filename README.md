@@ -1,6 +1,6 @@
 # DM-KD
 
-This is the official implementation of "Is Synthetic Data From Diffusion Models Ready for Knowledge Distillation?" https://arxiv.org/abs/2305.12954
+This is the official implementation of "Is Synthetic Data From Diffusion Models Ready for Knowledge Distillation?"
 
 
 ### Abstract
@@ -53,20 +53,20 @@ After the sythesis is complete, put the synthesized data into the `syn_dataset` 
 
 - We provide offline synthesized datasets for experiments.
 
-| Synthetic Dataset | Data Amount | Size | Download1 | Download2|
-|:---------------:|:-----------------:|:-----------------:|:-----------------:|:-----------------:|
-| Low Fidelity (s=2, T=100)  | 200K | ~20GB | [[Baidu Yun](https://pan.baidu.com/s/1nsVLzAqZ13NIvnT1vAIm0A?pwd=h5mc)] | [[OneDrive1](https://megvii-my.sharepoint.cn/:u:/g/personal/lizheng03_megvii_com/EYZ3HIPZ-xFFkiLkUamQkJ8Bg37VdTA6kqA947IaTLWJTQ)] [[OneDrive2](https://megvii-my.sharepoint.cn/:t:/g/personal/lizheng03_megvii_com/Eb1QNfYDrRRLt3EIhpmPDB4Bei2cJYEKcl-ISc0qJ5r-Lg?e=hm6ZEx)] |
-| High Fidelity (s=4, T=250) | 200K | ~20GB | [[Baidu Yun](https://pan.baidu.com/s/1yFxtqFqJITfTlLVsGNkIAQ?pwd=7449)] | [[OneDrive1](https://megvii-my.sharepoint.cn/:u:/g/personal/lizheng03_megvii_com/EQcsXo6xbUlBpGZxSA7pLFsB_zCoj7rimmjny6FJXuKC5A?e=Ct4jWQ)] [[OneDrive2](https://megvii-my.sharepoint.cn/:t:/g/personal/lizheng03_megvii_com/EasKMnY8V3tNkEEVe6Vg__4BWbJsc_y1nmozC4ogc1kvpg?e=1BlVdW)] |
+| Synthetic Dataset | Data Amount | Size | Download1 |
+|:---------------:|:-----------------:|:-----------------:|:-----------------:|
+| Low Fidelity (s=2, T=100)  | 200K | ~20GB | [[Baidu Yun](https://pan.baidu.com/s/1PjO2Z5eKBthiaQM08u__Jw?pwd=mke3 )] |
+| High Fidelity (s=4, T=250) | 200K | ~20GB | [[Baidu Yun](https://pan.baidu.com/s/1ncAi5bxAWMQZckMXjuWUOg?pwd=t5wb)] |
 
 Download the synthesized dataset and put the dataset into the `syn_dataset` folder. Then unzip the dataset in the current folder.
 
-2. Download the true ImageNet validation dataset and put them into the `true_dataset` folder. Then unzip the dataset in the current folder. You can download the true ImageNet-1K dataset using our links ([[Baidu Yun]](https://pan.baidu.com/s/1iKkeyio7YFQUElA3KSE3YA?pwd=aflb)). Or you can download the dataset from the [official website](https://www.image-net.org/).
+2. Download the true ImageNet validation dataset and put them into the `true_dataset` folder. Then unzip the dataset in the current folder. You can download the true ImageNet-1K dataset using our links ([[Baidu Yun]](https://pan.baidu.com/s/1LCw6YO8mj8fCoy2d1fdsrA?pwd=syyl)). Or you can download the dataset from the [official website](https://www.image-net.org/).
 
 3. Download the pretrained teacher models and put them into the `save/models` folder.
 
-| Teacher models | Download1 | Download2 |
-|:---------------:|:-----------------:|:-----------------:|
-| ImageNet | [[Baidu Yun](https://pan.baidu.com/s/1HjGlK2lqO2gPG61tz5N20w?pwd=vfpv)] | [[OneDrive](https://megvii-my.sharepoint.cn/:u:/g/personal/lizheng03_megvii_com/EfayZeT3x15NnEKUhlv6Z7EBNG2_BnStZvEwupF_8FTjMw?e=4GWRjy)] |
+| Teacher models | Download1 |
+|:---------------:|:-----------------:|
+| ImageNet | [[Baidu Yun](https://pan.baidu.com/s/1HjGlK2lqO2gPG61tz5N20w?pwd=vfpv)] |
 
 Note that the pretrained teacher models are also available at torchvision. You can also download the pretrained models from the [official website](https://pytorch.org/vision/main/models.html).
 
@@ -77,19 +77,3 @@ sh scripts/imagenet_distill.sh
 
 The running file will be saved in the `save/student_model` folder.
 
-
-
-## Citation
-
-If this repo is helpful for your research, please consider citing our paper:
-
-```
-@article{li2023synthetic,
-  title={Is Synthetic Data From Diffusion Models Ready for Knowledge Distillation?},
-  author={Li, Zheng and Li, Yuxuan and Zhao, Penghai and Song, Renjie and Li, Xiang and Yang, Jian},
-  journal={arXiv preprint arXiv:2305.12954},
-  year={2023}
-}
-```
-
-For any questions, please contact me via email (zhengli97@mail.nankai.edu.cn).

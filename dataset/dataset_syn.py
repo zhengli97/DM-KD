@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import json
-# from functools import lru_cache
 
 from PIL import Image
 from torch.utils.data import Dataset
